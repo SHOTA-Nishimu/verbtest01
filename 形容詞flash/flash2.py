@@ -3,26 +3,24 @@ import random
 import streamlit as st
 import numpy as np
 
-source = 'C:/Users/chisa/desktop/FlashCard/形容詞flash/形容詞.txt'
+source = 'C:\\Users\\chisa\\desktop\\FlashCard\\形容詞flash\\形容詞.txt'
 
-with open(source, encoding='utf-8') as f:    
-    d = f.read()
-    
+with open(source, encoding='utf-8') as f:
+        d = f.read()    
 
 keys = re.findall('[一-𥻘あ-ん()=~[\]、。「」々・……]+',d)
- #print(d)
+#print(d)
 
 source02 ='C:/Users/chisa/desktop/FlashCard/形容詞flash/形容詞answer.txt'
 
-with open(source02, encoding='utf-8') as f2:    
-    d2 = f2.read()
-    
+with open(source02, encoding='utf-8') as f2:
+    d2 = f2.read()    
 
 values = re.findall('[一-𥻘あ-ん()=~[\]、。「」々・……]+',d2)
- #print(d2)
+#print(d2)
 
 word_dict = dict(zip(keys, values))
- #print(word_dict)
+#print(word_dict)
 
 st.title('古文単語確認～形容詞～')
 

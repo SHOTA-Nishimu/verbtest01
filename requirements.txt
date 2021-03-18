@@ -1,2 +1,4 @@
 streamlit
 numpy
+'C:/Users/chisa/desktop/FlashCard/verb01.txt'
+'C:/Users/chisa/desktop/FlashCard/verb01answer.txt'
