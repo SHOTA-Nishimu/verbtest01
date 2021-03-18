@@ -3,7 +3,7 @@ import random
 import streamlit as st
 import numpy as np
 
-source = 'C:/Users/chisa/desktop/verb01.txt'
+source = 'C:/Users/chisa/desktop/FlashCard/verb01.txt'
 
 with open(source, encoding='utf-8') as f:    
     d = f.read()
@@ -12,7 +12,7 @@ with open(source, encoding='utf-8') as f:
 sentence = re.findall('[一-𥻘あ-ん()=~[\]、。「」々・……]+',d)
  #print(d)
 
-source02 ='C:/Users/chisa/desktop/verb01answer.txt'
+source02 ='C:/Users/chisa/desktop/FlashCard/verb01answer.txt'
 
 with open(source02, encoding='utf-8') as f2:    
     d2 = f2.read()
