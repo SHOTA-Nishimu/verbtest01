@@ -3,7 +3,7 @@ import random
 import streamlit as st
 import numpy as np
 
-source = 'C:/Users/chisa/desktop/FlashCard/verb01.txt'
+source = 'verb01.txt'
 
 f = open(source, "r", encoding='utf-8')
 d = f.read()
@@ -11,7 +11,7 @@ f.close()
 
 keys = re.findall(r'[^a-z\n]+', d)
 
-source02 = 'C:/Users/chisa/desktop/FlashCard/verb01answer.txt'
+source02 = 'verb01answer.txt'
 
 f2 = open(source02, "r", encoding='utf-8')
 d2 = f2.read()
@@ -27,7 +27,6 @@ st.title('古文単語練習')
 ### 次の（　）の単語の意味を答えなさい。
 
 """
-
 
 question_word = random.choice(keys)
 correct_answer = word_dict[question_word]
